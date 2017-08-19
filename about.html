@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body { 
+				font:normal 24px Arial; 
+				text-align: center; 
+				margin:0;
+				padding:0;
+			}
+			#header {
+				padding-top:0;
+				width:100%;
+				background-color:white;
+				margin:0;
+				padding:0;
+				display:block;
+				overflow:hidden;
+			}
+			#header li {
+				list-style-type:none;
+				float:left;
+				padding:2%;
+				background-color:white;
+			}
+			#header a {
+				text-decoration:none;
+				color:black;
+			}
+			#header a:hover {
+				border-bottom: 6px solid #a5d6a7;
+			}
+			#active {
+				border-bottom: 6px solid #66bb6a;
+			}
+			#opening {
+				margin:0;
+				padding:0;
+			}
+			.topimg {
+				position:relative;
+				width: 100%;
+				margin:0;
+			}
+			.toptext { 
+			   position: absolute; 
+			   top: 30%; 
+			   left: 0; 
+			   width: 100%; 
+			   color:black;
+			   background-color:white;
+			   opacity:0.6;
+			   
+			}
+			#list {
+				display:flex;
+				display: -webkit-flex;
+				-webkit-flex-wrap: wrap;
+    			flex-wrap: wrap;
+    			align-items:center;
+    			-webkit-align-items: center;
+			}
+			#listitem {
+				width:30%;
+				background-color: #a5d6a7;
+				margin:1%;
+				height:100px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div id="opening">
+			<img class="topimg" src="http://www.magic4walls.com/wp-content/uploads/2014/02/landscape-lake-himalaya-tree-forest-nature-mountains.jpg" alt="lake and mountians" />
+			<h1 class="toptext">Morgan's Website</h1>
+		</div>
+		<div id="header">
+			<li><a href="#">About</a></li>
+			<li><a id="active" href="#">Projects</a></li>
+			<li><a href="#">Blog</a></li>
+		</div>
+		<br>
+		<div id="list">
+			<div id="listitem"><p>Hi</p></div>
+			<div id="listitem">Hi</div>
+			<div id="listitem">Hi</div>
+			<div id="listitem">Hi</div>
+		</div>
+	</body>
+</html>
